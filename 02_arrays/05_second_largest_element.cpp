@@ -21,12 +21,12 @@ int largest_ele(int arr[],int s){
 
 int secLarg(int arr[],int s){
 
-    int largest=largest_ele(arr,s);
-    int res=-1;
+        int largest=largest_ele(arr,s);
+        int res=-1;
 
-    for(int i=0;i<s;i++){
+       for(int i=0;i<s;i++){
 
-        if(arr[i]!=arr[largest]){
+          if(arr[i]!=arr[largest]){
 
                if(res==-1){
 
@@ -42,11 +42,11 @@ int secLarg(int arr[],int s){
 
 
 
-        }
+           }
 
+      
 
-
-    }
+         }
 
  return res;
 
@@ -74,7 +74,7 @@ cin>>n;
 
  int np=secLarg(arr,s);
 
- cout<<"the second largest element is : "<<arr[np];
+ cout<<"the second largest element is : "<<np;
 
    return 0;
 }
