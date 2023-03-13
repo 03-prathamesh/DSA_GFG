@@ -33,6 +33,11 @@ void reverse(char name[]){
         end--;
      }
 
+
+     /*
+     swap(nums[start++],nums[end--]);
+     */
+
   
 }
 
