@@ -39,7 +39,7 @@ void printlist(llnode* &head){
 int main()
 {
 
-//create object of the class llnode
+//create object poiner of the class llnode
 llnode* node1=new llnode(10);
 // cout<<node1->data<<endl;
 // cout<<node1->next;
@@ -50,7 +50,7 @@ printlist(head);
 
 insertAtHead(head,12);  
 printlist(head);
-
+    
 
    return 0;
 }
