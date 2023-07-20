@@ -87,8 +87,19 @@ int main(){
   insertAtTail(tail,18);
   displayLL(head);
 
-  nodeToInsert(head,3,16);
+  nodeToInsert(head,3,16); // we cant insert new node at position 1
   displayLL(head);
+
+
+//   Node* head1=new Node(20);
+//   Node* head2=new Node(40);
+
+//   head1->next=head2;
+//   head1=head1->next;  // means head1 now points to head2 //if we dont use this. then head1 is pointing to 20th node
+//   cout<<head1->data<<endl;    //40
+//   cout<<head2->data;  //40  very imp to understand now
+
+
 
     return 0;
 }
