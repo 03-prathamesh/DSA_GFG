@@ -16,6 +16,15 @@ class Node{
 
 };
 
+  void insertAtHead(Node* &head,int d){
+
+    //create temp (new node)
+    Node* temp=new Node(d);
+    temp->next=head;
+    head=temp;
+
+  }
+
  void insertAtTail(Node* &tail, int d){
      
      //created a new node
@@ -26,7 +35,13 @@ class Node{
 
  }
 
- void nodeToInsert(Node* head,int position,int data){
+ void nodeToInsert(Node* &head,int position,int data){ //if you do not take & , then it will not work
+
+
+      if(position==1){ //you can insett at position 1
+          insertAtHead(head,data);
+          return; // so that statements below this lines will not execute
+      }
 
       //make temp pointer which will point to just previous node  after which we have to insert a node
       Node* temp=head; // it will point to the same node which head is pointing
@@ -87,7 +102,7 @@ int main(){
   insertAtTail(tail,18);
   displayLL(head);
 
-  nodeToInsert(head,3,16); // we cant insert new node at position 1
+  nodeToInsert(head,2,11); // we cant insert new node at position 1
   displayLL(head);
 
 

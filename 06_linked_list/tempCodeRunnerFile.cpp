@@ -1,1 +1,0 @@
-  head1->next=head2;
