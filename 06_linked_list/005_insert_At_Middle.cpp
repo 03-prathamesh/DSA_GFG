@@ -96,10 +96,13 @@ int main(){
 
 //   head1->next=head2;
 //   head1=head1->next;  // means head1 now points to head2 //if we dont use this. then head1 is pointing to 20th node
-//   cout<<head1->data<<endl;    //40
-//   cout<<head2->data;  //40  very imp to understand now
+// //   cout<<head1->data<<endl;    //40
+//   cout<<head2->data<<endl; //40  very imp to understand now
 
+//  cout<<head1->next<<"  "; 
+//  cout<<head2->next<<endl;
 
-
+//  Node* p=head1;
+//  cout<<p->data;   -40 because of head1=head1->next;
     return 0;
 }
