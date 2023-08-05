@@ -63,7 +63,7 @@ int lastOccurence(int arr[],int size,int key){
 int main(){
 
  
-   int even[6]={1,0,3,3,3,9};
+   int even[6]={1,0,3,3,3,10};
    int odd[5]={1,3,3,4,3};
 
    cout<<"First occurence of key element in this array is: "<<firstOccurence(even,6,3);
