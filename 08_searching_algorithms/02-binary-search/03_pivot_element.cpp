@@ -25,9 +25,9 @@ int pivotElement(int arr[],int size){
 
 int main(){
 
-   int arr[5]={3,8,1,17,18};
+   int arr[9]={10,11,12,13,14,2,3,4,5};
 
-   cout<<pivotElement(arr,5);
+   cout<<pivotElement(arr,9);
 
 
     return 0;
