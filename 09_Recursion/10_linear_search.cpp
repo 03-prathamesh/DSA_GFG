@@ -2,8 +2,16 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+void print(int arr[], int size){
+    for(int i=0;i<size;i++){
+      cout<<arr[i]<<"  "; 
+    }
+    cout<<endl;
+}
+ 
 bool isSorted(int arr[], int size, int key){
-
+      
+      print(arr,size);
       if(size==0){
         return false;
       }
@@ -18,20 +26,28 @@ bool isSorted(int arr[], int size, int key){
 
 int main(){
 
-    int n;
-    cout<<"Enter the size of your array: "<<endl;
-    cin>>n;
+    // int n;
+    // cout<<"Enter the size of your array: "<<endl;
+    // cin>>n;
 
-    int arr[n];
+    // int arr[n];
 
-    for(int i=0;i<n;i++){
-        cin>>arr[i];
-    }
+    // for(int i=0;i<n;i++){
+    //     cin>>arr[i];
+    // }
+    int n=5;
+    int arr[n]={20,7,12,30,34};
 
-    int key=12;
+    int key=0;
 
     bool ans=isSorted(arr,n,key);
-    cout<<ans<<endl;
+    // cout<<ans<<endl;
+    if(ans){
+       cout<<"PRESENT"<<endl;
+    }
+    else{
+      cout<<"ABSENT"<<endl;
+    }
 
 
     return 0;
