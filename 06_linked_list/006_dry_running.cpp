@@ -16,6 +16,8 @@ class Node{
        this->next=NULL;
    }
 
+  
+
 };
 
 int main(){
