@@ -87,6 +87,15 @@ int main(){
   Node* head=node1;
   Node* tail=node1;
 
+  // Node* node2 =new Node(20);
+  //  head->next=node2;
+  // node1->next=node2;   //so head next will containt address of node2 node. if this statement is not present , then head ->next will containt value as null
+  //  cout<<head->data<<endl; //10
+  //  cout<<head->next<<endl; //address of node 2
+  //  head=head->next;   
+  //   cout<<head->data<<endl; //20
+  //  cout<<head->next<<endl; //NULL
+
   displayLL(head);
   
 
